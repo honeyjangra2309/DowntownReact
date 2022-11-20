@@ -1,0 +1,137 @@
+.home {
+    display: flex;
+    padding-top: 13rem;
+    padding-left: 5rem;
+    background: url("../../public/PropertyImages/r-architecture-2gDwlIim3Uw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+.home::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+    background: #001d38;
+    content: '';
+}
+.container {
+    position: relative;
+}
+.container h1 {
+    font-family: "Nuosu SIL",serif;
+    color: white;
+    font-size: 4rem;
+    line-height: 1.3;
+    margin: 10px 0 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.container p {
+    color: white;
+    font-weight: 400;
+    width: 500px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    font-family: "Nuosu SIL",serif;
+}
+.link {
+    display: flex;
+    margin-top: 2rem;
+}
+.link .explore {
+    background: #fdae5c;
+    padding: 12px 40px;
+    border: 1px solid #fdae5c;
+    margin-right: 20px;
+    border-radius: 2rem 0 2rem 0;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    letter-spacing: 0.5px;
+    transition: 1s ease-in-out;
+}
+.link .explore:hover {
+    color: #fdae5c;
+    background: transparent;
+}
+.link .contact {
+    
+    padding: 12px 40px;
+    border: 1px solid #fdae5c;
+    margin-right: 20px;
+    border-radius:  2rem 0 2rem 0;
+    color: #fdae5c;
+    font-family: "Poppins",sans-serif;
+    letter-spacing: 0.5px;
+    transition: 1s ease-in-out;
+}
+.link .contact:hover {
+    background-color: #fdae5c;
+    color: white;
+}
+
+@media screen and (max-width:985px) {
+    .home{
+        padding-left: 3rem;
+    }
+    .container h1{
+        font-size: 3.5rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .home{
+        padding-left: 2rem;
+    }
+    .container h1{
+        font-size: 3rem;
+    }
+    .container p{
+        width: 400px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:480px) {
+    .home{
+        height: 80vh;
+        padding: 11rem 1rem 0 2rem;
+    }
+    .home::before{
+        bottom: 20%;
+    }
+    .container h1{
+        font-size: 2.5rem;
+    }
+    .container p{
+        font-size: 14px;
+        width: fit-content;
+    }
+    .link a{
+      font-size: 14px;
+    }
+    .link .explore{
+        padding: 10px 25px;
+    }
+    .link .contact{
+        padding: 10px 25px;
+    }
+}
+@media screen and (max-width:380px) {
+    .home{
+        padding-top: 9rem;
+    }
+    .container h1{
+        font-size: 2.3rem;
+    }
+    .link .contact{
+        padding: 10px 17px;
+    }
+    .link .explore{
+        padding: 10px 17px;
+        margin-right: 10px;
+    }
+}
